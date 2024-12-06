@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 32, 32);
+    list-style: none;
+    text-decoration: none;
+}
+h1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 20px 20px 20px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    box-shadow: 6px 6px 10px black;
+}
+
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+    .cards-content{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+        
+        column-gap: 35px;
+        box-shadow: 10px 10px 10px 10px rgba(8, 8, 8, 0.664);
+    }
+    
+
+
+    .card {
+        width: 90%;
+        height: 300px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 40px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 0 20px 10px;
+        color: #fff;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+  
+   
+   
+    
+    .banner-1 {
+        background-image: url("https://br.web.img3.acsta.net/c_300_300/pictures/22/01/11/11/02/5076502.jpg");
+    }
+    .banner-2 {
+        background-image: url("https://br.web.img2.acsta.net/c_300_300/pictures/22/02/16/11/09/1811350.jpg");
+    }
+    .banner-3 {
+        background-image: url("https://br.web.img3.acsta.net/c_300_300/pictures/22/02/16/11/09/1826951.jpg");
+    }
+         
+    .banner-4 {
+        background-image: url("https://media.gqitalia.it/photos/6439145e367043b4e31aff7c/1:1/w_1080,h_1080,c_limit/the%20Batman%202%20Robert%20pattison_0003_MCDBATM_WB075.jpg");
+    }
+        
+    .banner-5{
+        background-image: url("https://files.tecnoblog.net/wp-content/uploads/2021/04/Qual-a-ordem-cronologica-dos-filmes-do-Batman-8.jpg");
+    }
+
+    .banner-6{
+        background-image: url("https://ais.badische-zeitung.de/piece/0c/84/9d/8f/210017679-w-640.jpg");
+    }

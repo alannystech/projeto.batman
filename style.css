@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    width: 60%;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "kdam thmor pro",sans-serif;
+    box-shadow: 6px 6px 10px rgba(255, 0, 0, 0.466);
+}
+li:hover {
+    color: #d21617;
+}
+#logo {
+    width: 150px;
+    height: auto;
+    box-shadow: 6px 6px 10px rgba(237, 47, 47, 0.475);
+    margin-top: 10px;
+}
+#banner {
+    background-image: url("https://legadodadc.com.br/wp-content/uploads/2021/11/FD1vP6lWQAMNHQl-1.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trailer {
+    width: 50%;
+}
+#sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    
+
+}
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family:" kdam thmor pro",sans-serif;
+    width: 70%;
+    box-shadow: 6px 6px 6px rgba(255, 255, 255, 0.361);
+
+}
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+.button:hover{
+    background-color: #fff;
+    color: black;
+}
+.actor-cards-container{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: "kdam thmor pro",sans-serif;
+    box-shadow: 6px 6px 10px red;
+
+
+}
+.card:hover {
+    transform: scale(1.02);
+}
+.banner-1 {
+    background-image: url("https://br.web.img3.acsta.net/pictures/19/03/20/16/05/1007568.jpg");
+}
+.banner-2 {
+    background-image: url("https://static.wikia.nocookie.net/the-batman-universe/images/5/52/Zoe_Kravitz.jpg/revision/latest?cb=20240807185823");
+}
+.banner-3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6hsdpPH5ZSfT4z_Xx8SZgEQ8j5r146YcwPQsXZFfoMTvFTjkvGTEwxgJkiqRN6Bq84mg&usqp=CAU");
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+    color: #fff;
+    font-family:" kdam thmor pro",sans-serif; 
+}
+.footer-navigation {
+    display: none;
+
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 40%;
+    }
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trailer{
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        margin-top: 30px;
+
+    }
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+}
